@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Stub for making flowcharts with flowchartjs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script data-main="app/config" src="bower_components/requirejs/require.js"></script>
+  <link media="all" rel="stylesheet"  href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link media="all" rel="stylesheet"  href="styles.css" />
+</head>
+<body>
+  <div class="container">
+      <h1>flowchart</h1>
+      
+      <div class="row">
+          <div class="col-sm-4 form-group" >
+              <input type="text" data-bind="value: title" class="form-control"/>
+              <br/>
+              <textarea id="code" data-bind="value: code, valueUpdate: 'afterkeydown'" class="form-control"></textarea>
+              <br/>
+              <button id="save" data-bind="click:save" class="btn btn-default">Save</button>
+              <br/>
+              <br/>
+              <ul data-bind="foreach:diagrams" class="list-group">
+                <li class="list-group-item" data-bind="click:$parent.load">
+                  <a href="#" data-bind="click:$parent.load" class="glyphicon glyphicon-edit"></a>
+                  <a href="#" data-bind="click:$parent.delete" class="glyphicon glyphicon-remove"></a>
+                  <span data-bind="text:title"></span>
+                </li>
+              </ul>
+          </div>
+      
+          <div id="graph" class="col-sm-8">
+              <div id="diagram"></div>
+          </div>
+      </div>
+  
+  </div>
+</body>
+</html>

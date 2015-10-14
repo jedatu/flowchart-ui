@@ -1,0 +1,32 @@
+{
+  "name": "flowchart",
+  "dependencies": {
+    "requirejs": "~2.1.8",
+    "jquery": ">= 1.8.0",
+    "qunit": "~1.12.0",
+    "flowchart": "~1.4.2",
+    "bootstrap": "~3.3.5",
+    "knockout": "3.1.0",
+    "raphael": "~2.1.4",
+    "clipboard": "~1.4.2"
+  },
+  "version": "0.0.0",
+  "authors": [
+    "Jeff Tucker <jedatu@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
